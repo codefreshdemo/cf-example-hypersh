@@ -7,5 +7,6 @@ RUN wget https://hyper-install.s3.amazonaws.com/hyper-linux-x86_64.tar.gz
 RUN tar xzf hyper-linux-x86_64.tar.gz
 RUN chmod +x hyper
 
-ENTRYPOINT ["hyper"]
-CMD ["--help"]
+#ENTRYPOINT ["/bin/sh", "-c", "hyper"]
+
+CMD ["/bin/sh", "-c", "./hyper"]
