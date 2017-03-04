@@ -1,0 +1,9 @@
+version: '1.0'
+services:
+  hyper:
+    image: ncodefresh/hyper
+    commands:
+      - hyper ps
+    environment:
+      - HYPER_ACCESS=${{HYPER_ACCESS}}
+      - HYPER_SECRET=${{HYPER_SECRET}}
